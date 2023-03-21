@@ -30,6 +30,7 @@ namespace HuynhNhatTruong_2080600759.Controllers
         }
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(CourseViewModel viewModel)
 
         {
